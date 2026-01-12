@@ -1,6 +1,7 @@
 const pkg = require("./package");
 
 module.exports = {
+  target: "static",
   server: {
     host: "0.0.0.0",
   },
