@@ -34,8 +34,8 @@ export default {
 </style>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/utils";
 
 .menu-item {
   color: inherit;
@@ -44,7 +44,7 @@ export default {
   align-items: center;
   height: 30px;
 
-  @include phone {
+  @include breakpoints.phone {
     flex-direction: row-reverse;
   }
 
@@ -69,9 +69,9 @@ export default {
       opacity: .25;
     }
 
-    @include center
+    @include utils.center;
 
-    @include phone {
+    @include breakpoints.phone {
       flex-direction: row-reverse;
       margin-left: 16px;
       margin-right: 0;

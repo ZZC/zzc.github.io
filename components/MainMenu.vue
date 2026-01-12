@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '~/assets/sass/breakpoints.scss';
+@use '~/assets/sass/breakpoints';
 
 .main-menu {
   display: flex;
@@ -73,7 +73,7 @@ export default {
   &.column {
     flex-direction: column;
 
-    @include tablet {
+    @include breakpoints.tablet {
       & > * {
         margin-top: 5px;
         margin-bottom: 5px;

@@ -32,8 +32,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
 
 $color-rack-background: #616464;
 
@@ -45,15 +45,15 @@ $color-rack-background: #616464;
     background-image: url('~assets/images/rack-bg.svg');
     background-position: 0 0;
 
-    @include shrink-big-module {
+    @include breakpoints.shrink-big-module {
       background-size: auto 285px;
     }
 
-    @include phone {
+    @include breakpoints.phone {
       background-size: auto 190px;
     }
 
-    @include shrink-big-module-2 {
+    @include breakpoints.shrink-big-module-2 {
       background-size: auto 95px;
     }
 
@@ -69,7 +69,7 @@ $color-rack-background: #616464;
     margin-left: -7.5px;
     margin-right: -7.5px;
 
-    @include phone {
+    @include breakpoints.phone {
       margin-left: -3.75px;
       margin-right: -3.75px;
     }
@@ -92,7 +92,7 @@ $color-rack-background: #616464;
       // box-shadow: 0px 5px 20px rgba(0, 0, 0, .25);
       transition: filter 1s ease;
 
-      @include phone {
+      @include breakpoints.phone {
         margin-left: 3.75px;
         margin-right: 3.75px;
       }

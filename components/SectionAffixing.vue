@@ -162,10 +162,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .blueprint {
-  @include phone {
+  @include breakpoints.phone {
     display: none;
   }
 }

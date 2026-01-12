@@ -63,17 +63,17 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .article-layout {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
 
-  @include phone {
+  @include breakpoints.phone {
     margin-top: 40px;
   }
-  @include tablet {
+  @include breakpoints.tablet {
     margin-top: 50px;
     margin-left: -30px;
     margin-right: -30px;

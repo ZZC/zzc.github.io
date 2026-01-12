@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang='scss'>
-@import "~/assets/sass/fonts.scss";
+@use "~/assets/sass/fonts";
 
 * {
   box-sizing: border-box;
@@ -37,7 +37,7 @@ a {
 </style>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/colors";
 
 .layout {
   display: flex;

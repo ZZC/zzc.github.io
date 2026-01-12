@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .container {
   max-width: 1420px;
@@ -25,7 +25,7 @@ export default {
     padding-left: 20px;
     padding-right: 20px;
 
-    @include tablet {
+    @include breakpoints.tablet {
       padding-left: 60px;
       padding-right: 60px;
     }

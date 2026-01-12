@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .article {
   .subtitle {

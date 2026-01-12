@@ -129,8 +129,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
 
 .widget-legend {
 
@@ -145,7 +145,7 @@ export default {
         left: -15px;
         width: 5px;
         height: 100%;
-        background-color: $color-zzc;
+        background-color: colors.$color-zzc;
       }
     }
 
@@ -160,7 +160,7 @@ export default {
         top: 50%;
       }
 
-      @include phone {
+      @include breakpoints.phone {
         display: none;
       }
     }
@@ -174,7 +174,7 @@ export default {
       text-decoration: underline;
     }
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 16px;
     }
   }
@@ -183,7 +183,7 @@ export default {
     font-family: 'Montserrat';
     font-size: 14px;
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 12px;
     }
   }
@@ -209,7 +209,7 @@ export default {
       opacity: .75;
       line-height: 1.35;
 
-      @include phone {
+      @include breakpoints.phone {
         font-size: 12px;
       }
     }
@@ -218,14 +218,14 @@ export default {
 </style>
 
 <style lang='scss'>
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/colors";
 
 .widget-legend {
   .description {
     & > .md-item {
       p:first-child {
         a:first-child {
-          color: $color-fg;
+          color: colors.$color-fg;
           font-weight: 600;
         }
       }

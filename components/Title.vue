@@ -24,8 +24,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/utils";
 
 .title {
   font-family: 'Montserrat';
@@ -37,7 +37,7 @@ export default {
     .text {
       margin-right: auto;
       padding-right: 40px;
-      @include phone {
+      @include breakpoints.phone {
         padding-right: 20px;
       }
     }
@@ -70,21 +70,21 @@ export default {
       margin-bottom: .5em;
     }
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 28px;
     }
   }
   h2 {
     font-size: 24px;
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 20px;
     }
   }
   h3 {
     font-size: 18px;
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 16px;
     }
   }

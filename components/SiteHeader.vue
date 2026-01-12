@@ -48,15 +48,15 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/utils";
 
 .site-header {
   color: #424747;
   position: relative;
 
   .header-bg {
-    @include stretch;
+    @include utils.stretch;
     overflow: hidden;
 
     .logo-outline {
@@ -68,7 +68,7 @@ export default {
       left: 50%;
       margin-left: -75%;
 
-      @include tablet {
+      @include breakpoints.tablet {
         max-width: 1400px;
         margin-left: -800px;
       }
@@ -80,7 +80,7 @@ export default {
     display: flex;
     align-items: center;
 
-    @include tablet {
+    @include breakpoints.tablet {
       min-height: 145px;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -95,10 +95,10 @@ export default {
         padding-top: 10px;
         padding-bottom: 10px;
 
-        @include phone {
+        @include breakpoints.phone {
           min-height: 60px;
           width: 100%;
-          @include center;
+          @include utils.center;
         }
       }
 
@@ -109,7 +109,7 @@ export default {
         margin-left: auto;
         padding-left: 50px;
 
-        @include phone {
+        @include breakpoints.phone {
           display: none;
         }
 
@@ -134,7 +134,7 @@ export default {
         .separator {
           height: 30px;
           width: 100px;
-          @include center;
+          @include utils.center;
 
           .dot {
             height: 4px;

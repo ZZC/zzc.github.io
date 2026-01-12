@@ -32,23 +32,23 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
+@use "~/assets/sass/utils";
 
 .store-link {
-  @include center;
+  @include utils.center;
   border-radius: 5px;
-  color: $color-fg;
+  color: colors.$color-fg;
   height: 40px;
   padding: 0 20px;
   font-size: 14px;
   font-weight: 600;
-  border: 1px solid $color-fg;
+  border: 1px solid colors.$color-fg;
   white-space: nowrap;
 
   .buy {
-    @include phone {
+    @include breakpoints.phone {
       display: none;
     }
   }
@@ -65,8 +65,8 @@ export default {
   }
 
   &:hover {
-    background-color: $color-fg;
-    color: $color-zzc;
+    background-color: colors.$color-fg;
+    color: colors.$color-zzc;
   }
 }
 </style>

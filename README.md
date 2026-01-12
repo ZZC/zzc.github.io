@@ -6,23 +6,23 @@
 
 Install dependencies
 ```bash
-yarn
+bun install
 ```
 
 Serve with hot reload at localhost:3000
 ```bash
-yarn dev
+bun dev
 ```
 
 Build for production and launch server
 ```bash
-yarn run build
-yarn start
+bun run build
+bun run start
 ```
 
 Generate static project
 ```bash
-yarn run generate
+bun run generate
 ```
 
 ## Notes

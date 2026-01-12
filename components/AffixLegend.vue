@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .affix-legend {
   min-width: 280px;
@@ -107,4 +107,3 @@ export default {
   }
 }
 </style>
-

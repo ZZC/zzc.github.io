@@ -39,18 +39,18 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
+@use "~/assets/sass/utils";
 
 .site-footer {
-  background-color: $color-zzc;
+  background-color: colors.$color-zzc;
   position: relative;
 
   .footer-bg {
-    color: darken($color-zzc, 7%);
+    color: #e6c226;
     overflow: hidden;
-    @include stretch;
+    @include utils.stretch;
 
     .logo {
       position: absolute;
@@ -58,11 +58,11 @@ export default {
       left: -40%;
       margin-top: -10%;
 
-      @include phone {
+      @include breakpoints.phone {
         height: 20%;
       }
 
-      @include tablet {
+      @include breakpoints.tablet {
         height: 100%;
         width: 100%;
         left: 50%;
@@ -74,17 +74,17 @@ export default {
   }
 
   .footer-layout {
-    color: $color-fg;
+    color: colors.$color-fg;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 
-    @include tablet {
+    @include breakpoints.tablet {
       padding-top: 60px;
       padding-bottom: 60px;
     }
 
-    @include phone {
+    @include breakpoints.phone {
       flex-direction: column-reverse;
       align-items: flex-end;
       padding-top: 20px;
@@ -98,23 +98,23 @@ export default {
       flex-direction: column;
       align-items: flex-start;
 
-      @include tablet {
+      @include breakpoints.tablet {
         flex-grow: 1;
         flex-basis: 0;
       }
 
-      @include phone {
+      @include breakpoints.phone {
         align-items: flex-end;
       }
 
       & > * {
         &:not(.main-menu) {
-          @include phone {
+          @include breakpoints.phone {
             margin-top: 10px;
             margin-bottom: 10px;
           }
 
-          @include tablet {
+          @include breakpoints.tablet {
             margin-top: 5px;
             margin-bottom: 5px;
           }

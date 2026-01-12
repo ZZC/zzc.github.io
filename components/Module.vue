@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .module {
   max-width: 100%;
@@ -35,15 +35,15 @@ export default {
   .image {
     display: block;
 
-    @include shrink-big-module {
+    @include breakpoints.shrink-big-module {
       max-height: 285px;
     }
 
-    @include phone {
+    @include breakpoints.phone {
       max-height: 190px;
     }
 
-    @include shrink-big-module-2 {
+    @include breakpoints.shrink-big-module-2 {
       max-height: 95px;
     }
   }

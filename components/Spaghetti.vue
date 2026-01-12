@@ -31,12 +31,12 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/colors";
 
 svg {
   path {
     fill: none;
-    stroke: $color-zzc;
+    stroke: colors.$color-zzc;
     stroke-width: 5px;
   }
 }
@@ -46,7 +46,7 @@ svg {
   svg {
     path {
       fill: none;
-      stroke: $color-zzc;
+      stroke: colors.$color-zzc;
       stroke-width: 5px;
     }
   }

@@ -36,9 +36,9 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
+@use "~/assets/sass/utils";
 $color-gray-crumbs-selection: #616464;
 
 .crumbsbar {
@@ -54,7 +54,7 @@ $color-gray-crumbs-selection: #616464;
     .yellow-line {
       display: block;
       height: 5px;
-      background-color: $color-zzc;
+      background-color: colors.$color-zzc;
     }
 
     .crumb:last-of-type {
@@ -63,7 +63,7 @@ $color-gray-crumbs-selection: #616464;
   }
 
   &.theme-yellow {
-    background-color: $color-zzc;
+    background-color: colors.$color-zzc;
 
     .crumb:last-of-type {
       background-color: #fff;
@@ -79,10 +79,10 @@ $color-gray-crumbs-selection: #616464;
       width: 45px;
       height: 60px;
 
-      @include phone {
+      @include breakpoints.phone {
         margin-left: 20px;
       }
-      @include tablet {
+      @include breakpoints.tablet {
         margin-left: 60px;
       }
     }
@@ -94,7 +94,7 @@ $color-gray-crumbs-selection: #616464;
     .crumb {
       font-size: 14px;
       height: 60px;
-      @include center;
+      @include utils.center;
 
       &:hover {
         text-decoration: underline;

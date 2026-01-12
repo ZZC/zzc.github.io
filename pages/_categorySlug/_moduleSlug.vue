@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .pre {
   font-family: inherit;
@@ -93,7 +93,7 @@ export default {
   flex-wrap: wrap;
   margin-bottom: 10px;
 
-  @include phone {
+  @include breakpoints.phone {
     margin-top: 40px;
 
     & > * {
@@ -101,7 +101,7 @@ export default {
     }
   }
 
-  @include tablet {
+  @include breakpoints.tablet {
     margin-top: 60px;
     margin-left: -30px;
     margin-right: -30px;

@@ -14,11 +14,11 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/utils.scss";
+@use "~/assets/sass/utils";
 
 .logo {
   height: 30px;
-  @include center;
+  @include utils.center;
 
   .zzc-logo {
     vertical-align: top;

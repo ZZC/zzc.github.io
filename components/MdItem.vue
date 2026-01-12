@@ -59,8 +59,8 @@ export default {
 </style>
 
 <style lang='scss'>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
 
 .md-item {
 
@@ -74,18 +74,18 @@ export default {
 
   p {
     font-family: 'Montserrat';
-    color: transparentize($color-fg, .1);
+    color: rgba(colors.$color-fg, 0.9);
     line-height: 1.65;
     font-size: 14px;
     margin: 1.5em 0;
 
-    @include phone {
+    @include breakpoints.phone {
       font-size: 12px;
     }
   }
 
   a {
-    color: $color-link;
+    color: colors.$color-link;
     // font-family: 'agave';
     // font-size: 1.3em;
     // line-height: 1.0;
@@ -106,7 +106,7 @@ export default {
   }
 
   .md-quote {
-    border-left: 4px solid $color-zzc;
+    border-left: 4px solid colors.$color-zzc;
     padding-left: 20px;
     padding-right: 20px;
 

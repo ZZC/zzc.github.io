@@ -1,0 +1,5 @@
+// Modern Sass entry point - forwards all modules with @use
+@forward 'colors';
+@forward 'fonts';
+@forward 'breakpoints';
+@forward 'utils';

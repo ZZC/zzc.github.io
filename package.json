@@ -11,23 +11,22 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/svg": "^0.4.1",
     "@rgrove/parse-xml": "^2.0.0",
-    "cross-env": "^5.2.0",
+    "cross-env": "^5.2.1",
     "marked": "^0.6.1",
-    "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.18.1",
     "nuxt-i18n": "^5.8.5",
     "nuxt-i18n-module": "^0.2.6",
-    "nuxt-svg": "^0.1.4",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^10.1.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.4.1",
     "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10",
-    "yarn": "^1.22.10"
+    "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

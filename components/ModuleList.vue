@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .module-list {
   .title {
@@ -54,7 +54,7 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-gap: 20px 60px;
 
-    @include phone {
+    @include breakpoints.phone {
       grid-gap: 20px 40px;
     }
 

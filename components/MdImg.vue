@@ -32,10 +32,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
+@use "~/assets/sass/breakpoints";
 
 .md-img {
-  @include phone {
+  @include breakpoints.phone {
     margin-left: -20px;
     margin-right: -20px;
   }

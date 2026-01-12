@@ -163,8 +163,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "~/assets/sass/breakpoints.scss";
-@import "~/assets/sass/colors.scss";
+@use "~/assets/sass/breakpoints";
+@use "~/assets/sass/colors";
 
 .blueprint {
   position: relative;
@@ -240,7 +240,7 @@ export default {
 
       &.active {
         opacity: 1;
-        box-shadow: 0 0 0 2px $color-zzc;
+        box-shadow: 0 0 0 2px colors.$color-zzc;
       }
     }
   }
