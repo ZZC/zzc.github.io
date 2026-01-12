@@ -14,8 +14,6 @@
         //- menu-item(to='/about') About
       .group.group-2
         menu-item(:to='{ name: "index", params: { lang: $i18n.locale } }') {{ $t('menu.all') }}
-        menu-item(:to='{ name: "categorySlug", params: { categorySlug: "free", lang: $i18n.locale } }') {{ $t('menu.free') }}
-        menu-item(:to='{ name: "categorySlug", params: { categorySlug: "paid", lang: $i18n.locale } }') {{ $t('menu.paid') }}
       .group.group-3
         main-menu(:column='true')
 </template>

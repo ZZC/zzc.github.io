@@ -1,13 +1,13 @@
 {
- "menu": {
-   "all": "All",
-   "free": "Free",
-   "paid": "Paid",
-   "author": "Sergey Ukolov"
- },
- "relatedModules": "Related Modules",
- "free": "Free",
- "buyFor": "Buy for",
- "addToRack": "Add to Rack",
- "freeAndOpenSource": "Free & Open Source"
+  "menu": {
+    "all": "All modules",
+    "free": "Free",
+    "paid": "Paid",
+    "author": "Sergey Ukolov"
+  },
+  "relatedModules": "Related Modules",
+  "free": "Free",
+  "buyFor": "Buy for",
+  "addToRack": "Add to Rack",
+  "freeAndOpenSource": "Free & Open Source"
 }

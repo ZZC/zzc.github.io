@@ -1,13 +1,13 @@
 {
- "menu": {
-   "all": "Все",
-   "free": "Бесплатные",
-   "paid": "Платные",
-   "author": "Сергей Уколов"
- },
- "relatedModules": "Модули по теме",
- "free": "Бесплатно",
- "buyFor": "Купить за",
- "addToRack": "Добавить в Rack",
- "freeAndOpenSource": "Свободное ПО"
+  "menu": {
+    "all": "Все модули",
+    "free": "Бесплатные",
+    "paid": "Платные",
+    "author": "Сергей Уколов"
+  },
+  "relatedModules": "Модули по теме",
+  "free": "Бесплатно",
+  "buyFor": "Купить за",
+  "addToRack": "Добавить в Rack",
+  "freeAndOpenSource": "Свободное ПО"
 }
